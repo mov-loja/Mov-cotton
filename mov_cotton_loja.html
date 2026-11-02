@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171717">
+<title>MOV COTTON | Básicos que vestem bem</title>
+<style>
+:root{--black:#171717;--white:#fff;--beige:#d8c0a0;--sand:#f2ede6;--ink:#24211e;--muted:#77716b}
+*{box-sizing:border-box}body{margin:0;background:#faf9f7;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+.announcement{background:var(--black);color:#fff;text-align:center;padding:10px;font-size:12px;letter-spacing:.5px}
+header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:5}
+.nav{max-width:1120px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:31px;font-weight:950;letter-spacing:-2px;color:#111;line-height:.8;text-align:center}.brand small{display:block;font-size:10px;letter-spacing:6px;margin:8px 0 0 5px}
+nav{display:flex;gap:23px}nav a{color:#222;text-decoration:none;font-size:13px;font-weight:600}
+.contact{background:var(--beige);color:#171717;text-decoration:none;padding:11px 16px;border-radius:30px;font-size:13px;font-weight:bold}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+.hero{margin:22px auto 0;min-height:390px;border-radius:4px;overflow:hidden;background:linear-gradient(90deg,#171717 0%,#24211f 48%,#76685b 100%);color:#fff;display:grid;grid-template-columns:1.05fr .95fr;align-items:center}
+.hero-copy{padding:48px}.eyebrow{letter-spacing:5px;font-size:12px;color:var(--beige);font-weight:bold}
+h1{font-size:clamp(38px,5vw,62px);line-height:.98;letter-spacing:-2px;margin:18px 0}.hero p{color:#e5e0da;line-height:1.55;max-width:410px}
+.hero strong{color:var(--beige)}.cta{display:inline-block;margin-top:18px;background:var(--beige);color:#171717;text-decoration:none;padding:15px 22px;border-radius:3px;font-weight:bold;font-size:14px}
+.hero-art{height:100%;min-height:340px;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at center,#b5a18b 0%,#75675a 45%,#292624 80%)}
+.shirt{width:210px;height:245px;background:#111;clip-path:polygon(25% 0,40% 0,45% 8%,55% 8%,60% 0,75% 0,100% 24%,84% 43%,74% 34%,74% 100%,26% 100%,26% 34%,16% 43%,0 24%);filter:drop-shadow(0 15px 18px #0008);position:relative}
+.shirt:after{content:"MOV";position:absolute;top:47%;left:0;right:0;text-align:center;color:#eee;font-weight:900;font-size:17px;letter-spacing:2px}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);background:var(--sand);padding:19px 10px;margin:0 0 42px;text-align:center;gap:10px;font-size:13px}
+.benefits b{display:block;margin-bottom:4px}.section{padding:8px 0 38px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:18px}.section-head h2{font-size:28px;letter-spacing:-.8px;margin:0}.section-head p{color:var(--muted);font-size:13px;margin:6px 0 0}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.category{min-height:155px;background:var(--sand);display:flex;flex-direction:column;justify-content:end;padding:20px;position:relative;overflow:hidden}.category:nth-child(2){background:#e6e2dc}.category:nth-child(3){background:#d4c2aa}.category span{font-size:12px;color:#5e554c}.category b{font-size:23px;margin:5px 0}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{background:#fff;border:1px solid #eee}.product-photo{height:235px;background:#f0eee9;display:flex;align-items:center;justify-content:center;position:relative}.tee{width:132px;height:157px;clip-path:polygon(25% 0,40% 0,45% 8%,55% 8%,60% 0,75% 0,100% 24%,84% 43%,74% 34%,74% 100%,26% 100%,26% 34%,16% 43%,0 24%);filter:drop-shadow(0 7px 8px #0002)}
+.black{background:#171717}.white{background:#fff;border:1px solid #ddd}.beige{background:#cdb99d}
+.product-info{padding:15px}.product-info h3{font-size:15px;margin:0 0 6px}.product-info p{font-size:12px;color:var(--muted);margin:0 0 12px}.price{font-size:19px;font-weight:900;margin-bottom:12px}.price small{font-size:11px;font-weight:normal;color:var(--muted)}
+.buy{display:block;text-align:center;background:#171717;color:#fff;text-decoration:none;padding:12px;font-size:12px;font-weight:bold;letter-spacing:.4px}
+.about{background:#171717;color:white;padding:35px;margin:20px 0 45px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.about h2{font-size:28px;margin:0 0 10px}.about p{color:#d4d0ca;line-height:1.6;font-size:14px}
+footer{background:#111;color:#fff;padding:30px 20px;text-align:center}footer .brand{color:#fff}footer p{color:#c4c0ba;font-size:12px}
+.float{position:fixed;right:18px;bottom:18px;background:#1c9b52;color:#fff;text-decoration:none;border-radius:30px;padding:14px 18px;font-weight:bold;font-size:13px;box-shadow:0 4px 14px #0003;z-index:9}
+@media(max-width:720px){nav{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:30px 25px 10px}.hero-art{min-height:220px}.shirt{transform:scale(.75)}.benefits{font-size:11px}.categories{grid-template-columns:1fr}.category{min-height:115px}.products{grid-template-columns:repeat(2,1fr);gap:10px}.product-photo{height:160px}.tee{transform:scale(.8)}.product-info{padding:11px}.about{grid-template-columns:1fr;padding:25px}.section-head h2{font-size:23px}}
+</style></head>
+<body>
+<div class="announcement">MOV COTTON &nbsp; • &nbsp; BÁSICOS ESSENCIAIS, ESTILO SEM ESFORÇO</div>
+<header><div class="nav">
+<div class="brand">MOV<small>COTTON</small></div>
+<nav><a href="#inicio">Início</a><a href="#camisetas">Camisetas</a><a href="#sobre">Nossa essência</a></nav>
+<a class="contact" id="topContact" target="_blank" rel="noopener">Fale conosco</a>
+</div></header>
+<div class="wrap">
+<section class="hero" id="inicio">
+<div class="hero-copy"><div class="eyebrow">MOV COTTON</div><h1>O básico<br>é <strong>essencial.</strong></h1><p>Camisetas básicas em algodão para acompanhar você em todos os momentos. Conforto, versatilidade e estilo sem exageros.</p><a class="cta" href="#camisetas">CONHEÇA A COLEÇÃO →</a></div>
+<div class="hero-art"><div class="shirt"></div></div>
+</section>
+<div class="benefits"><div>✳ <b>Conforto no dia a dia</b>Peças para acompanhar sua rotina</div><div>◇ <b>Estilo versátil</b>Combina com diferentes ocasiões</div><div>♡ <b>Atendimento próximo</b>Peça direto pelo WhatsApp</div></div>
+<section class="section"><div class="section-head"><div><h2>Menos excesso. Mais essência.</h2><p>Uma seleção de cores fáceis de combinar.</p></div></div>
+<div class="categories"><div class="category"><span>01 / ESSENCIAL</span><b>Preto clássico</b><span>Discreto e atemporal</span></div><div class="category"><span>02 / CLÁSSICO</span><b>Branco essencial</b><span>Leve para qualquer combinação</span></div><div class="category"><span>03 / NEUTRO</span><b>Bege natural</b><span>Uma escolha contemporânea</span></div></div></section>
+<section class="section" id="camisetas"><div class="section-head"><div><h2>As camisetas MOV</h2><p>Escolha sua cor e consulte tamanhos e disponibilidade.</p></div></div>
+<div class="products">
+<article class="product"><div class="product-photo"><div class="tee black"></div></div><div class="product-info"><h3>Camiseta Básica MOV — Preta</h3><p>Algodão • Consulte tamanhos disponíveis</p><div class="price">Consulte o valor</div><a class="buy order" data-product="Camiseta Básica MOV preta" target="_blank" rel="noopener">PEDIR PELO WHATSAPP</a></div></article>
+<article class="product"><div class="product-photo"><div class="tee white"></div></div><div class="product-info"><h3>Camiseta Básica MOV — Branca</h3><p>Algodão • Consulte tamanhos disponíveis</p><div class="price">Consulte o valor</div><a class="buy order" data-product="Camiseta Básica MOV branca" target="_blank" rel="noopener">PEDIR PELO WHATSAPP</a></div></article>
+<article class="product"><div class="product-photo"><div class="tee beige"></div></div><div class="product-info"><h3>Camiseta Básica MOV — Bege</h3><p>Algodão • Consulte tamanhos disponíveis</p><div class="price">Consulte o valor</div><a class="buy order" data-product="Camiseta Básica MOV bege" target="_blank" rel="noopener">PEDIR PELO WHATSAPP</a></div></article>
+</div></section>
+<section class="about" id="sobre"><div><div class="eyebrow">NOSSA ESSÊNCIA</div><h2>Feita para ser usada. Feita para durar.</h2></div><p>A MOV COTTON acredita que vestir bem não precisa ser complicado. Nossa proposta é valorizar o essencial: camisetas básicas, cores versáteis e conforto para todos os dias.</p></section>
+</div>
+<footer><div class="brand">MOV<small>COTTON</small></div><p>O básico é essencial.</p><p>Atendimento e pedidos pelo WhatsApp • © 2026 MOV COTTON</p></footer>
+<a class="float" id="floatContact" target="_blank" rel="noopener">WhatsApp • Fale conosco</a>
+<script>
+const phone="5547988157323";
+const wa=(msg)=>"https://wa.me/"+phone+"?text="+encodeURIComponent(msg);
+document.getElementById("topContact").href=wa("Olá! Vim pelo site da MOV COTTON e gostaria de conhecer a coleção.");
+document.getElementById("floatContact").href=wa("Olá! Vim pelo site da MOV COTTON e gostaria de fazer um pedido.");
+document.querySelectorAll(".order").forEach(a=>a.href=wa("Olá! Tenho interesse na "+a.dataset.product+". Pode me informar os tamanhos, disponibilidade e valor?"));
+</script>
+</body></html>
